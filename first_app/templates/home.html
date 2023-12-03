@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>Home</h1> -->
+    <h1><a href="/first_app">Home</a></h1>
+    <h1><a href="/first_app/about/">about</a></h1>
+    <h1><a href="/first_app/contact/">contact</a></h1>
+    <h1>this is first app home</h1>
+    <h1>Django Template filter prictict</h1>
+    <h4>---add template Filters ---</h4>
+    <h3>{{name | add:"2"}}</h3>
+    <h4>---add template Filters ---</h4>
+    <h3>{{name | add:"2"}}</h3>
+    
+    <h4>---capfirst template Filters ---</h4>
+    <h3>{{ name | capfirst}}</h3>
+
+    <h4>---center template Filters ---</h4>
+    <h3>{{ 'Jai' | center:"100"}}</h3>
+
+    <h4>---cut template Filters ---</h4>
+    <h3>{{ 'hello world joi'}}</h3>
+    <h3>{{ 'hello world joi' | cut:" "}}</h3>
+
+    <h4>---date template Filters ---</h4>
+
+    <h4>---default template Filters ---</h4>
+    <h3>{{ ""| default:'kiso nai'}}</h3>
+
+    <h4>---distsort template Filters ---</h4>
+    <h3>{{student}}</h3>
+    <h3>{{student| dictsort:'name'}}</h3>
+
+    <h4>---divisibleby template Filters ---</h4>
+    <h3>1</h3>
+    <h3>{{ 1 | divisibleby:"12"}}</h3>
+
+    <h4>---escape template Filters ---</h4>
+    <h3>
+      <p>This  &lt em>should be </em> fun!</p> 
+
+      <p>This is an example of using escape sequences in HTML:</p>
+<pre>
+  &lt;p&gt;This is a paragraph with &lt;strong&gt;strong&lt;/strong&gt; emphasis.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;/ul&gt;
+</pre>
+      <!-- {{ -->
+      <!-- <p>This <em>should be</em> fun!</p> -->
+      <!-- | escape}} -->
+    </h3>
+
+    <h4>---filesizeformat template Filters ---</h4>
+    <h3>{{ 1000000000 | filesizeformat}}</h3>
+
+    <h4>---first template Filters ---</h4>
+    <h3>{{ student | first}}</h3>
+
+    <h4>---floatformat template Filters ---</h4>
+    <h3>{{ 100.123456789 | floatformat}}</h3>
+    <h3>{{ 100.123456789 | floatformat:"3"}}</h3>
+
+    <h4>---get_digit template Filters ---</h4>
+    <h3>{{ 123456789 | get_digit:"3"}}</h3>
+    <h3>{{ 123456789 | get_digit:"9"}}</h3>
+
+    <h4>---join template Filters ---</h4>
+    <h3>{{ name | join:"-"}}</h3>
+
+    <h4>---last template Filters ---</h4>
+    <h3>{{ student | last}}</h3>
+
+    <h4>---length template Filters ---</h4>
+    <h3>{{ student | length}}</h3>
+
+    <h4>---length_is template Filters ---</h4>
+    <h3>{{ student | length_is:"2"}}</h3>
+
+    <h4>---linebreaks template Filters ---</h4>
+    <h3>{{ list | linebreaks}}</h3>
+
+    <h4>---lower template Filters ---</h4>
+    <h3>{{ name | lower}}</h3>
+
+    <h4>---make_list template Filters ---</h4>
+    <h3>{{ name | make_list}}</h3>
+
+    <h4>---phone2numeric template Filters ---</h4>
+    <h3>{{ name | phone2numeric}}</h3>
+
+    <h4>---random template Filters ---</h4>
+    <h3>{{ name | random}}</h3>
+
+    <h4>---slice template Filters ---</h4>
+    <h3>{{ name | slice:"2"}}</h3>
+
+    <h4>---title template Filters ---</h4>
+    <h3>{{ name | title}}</h3>
+
+    <h4>---slugify template Filters ---</h4>
+    <h3>{{ 'hello world' | slugify}}</h3>
+
+    <h4>---time template Filters ---</h4>
+    <h3>{{ today | time:"H:i"}}</h3>
+
+    <h4>---timesince template Filters ---</h4>
+    <h3>{{ today | timesince:today}}</h3>
+
+    //world count
+    <h4>---wordcount template Filters ---</h4>
+    <h3>{{ name | wordcount}}</h3>
+
+    <!-- <h1>{{age}}</h1>
+    <h1>{{list}}</h1> -->
+    <!-- if conditon -->
+    <!-- {% if age >= 20 %}
+    <h4>you can drive a car</h4>
+    {% elif age >= 10 and age <= 19 %}
+    <h4>you can drive a bike</h4>
+    {% else %}
+    <h4>you can ride a cycle</h4>
+    {% endif %}
+
+    <-- for loop -->
+    <!-- {% for i in course %}
+    <h1>{{i.id}} {{i.fee}}</h1>
+    <h1>{{i.fee}}</h1>
+    {% endfor %} -->
+  </body>
+</html>
